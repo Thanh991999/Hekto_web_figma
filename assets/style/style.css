@@ -1,0 +1,42 @@
+
+.section.topbar {
+  background-color: #7E33E0;
+}
+
+.topbar-wrapper {
+  padding-top: 9px;
+  padding-bottom: 11px;
+}
+
+.topbar__list--left li:first-child {
+  margin-right: 48px;
+}
+
+
+.topbar__list li>span {
+  color: var(--text-color-primary-white);
+  font-size: var(--font-size-regular);
+  line-height: 1em;
+}
+
+.topbar__icon--left {
+  margin-right: 12px;
+}
+
+.topbar__icon--right {
+  margin-left: 1px;
+}
+
+.topbar__list--right li{
+  margin-right: 17px;
+}
+
+.cart {
+  margin-left: 17px;
+}
+
+.cart__icon {
+  display: block;
+}
+
+

@@ -1,0 +1,165 @@
+:root {
+  --text-color-primary-dark: #0D0E43;
+  --text-color-primary-white: #F1F1F1;
+
+  --text-color-secondary: #8A8FB9;
+  /* --text-color-third: #8A8FB9; */
+
+  --color-pink: #FB2E86;
+  
+  --background-color-primary: #F2F0FF;
+  --background-color-secondary: #F7F7F7;
+
+  --letter-spacing: 0.01em;
+
+  --font-size-regular: 1.6rem;
+  --line-height-regular: 1.25em;
+
+  --font-size-bold: 4.2rem;
+  --line-height-bold: 1.167rem;
+  
+  --front-primary: 'Josefin Sans';
+  --front-secondary: 'Lato';
+
+
+}
+
+* {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%; 
+  /* 
+    1rem = 10px 
+  */
+  font-weight: 400;
+  box-sizing: border-box;
+  font-family: var(--front-primary), sans-serif;
+}
+
+i {
+  display: inline-block;
+}
+
+ul {
+  padding-left: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+.dfc {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.df {
+  display: flex;
+}
+
+.alc {
+  align-items: center;
+}
+
+.jcs {
+  justify-content: space-between;
+}
+
+.middle {
+  justify-items: center;
+}
+
+
+.df--sb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.df--center{
+  justify-content: center;
+}
+
+.df--unset{
+  justify-content: unset;
+}
+
+.text--dark {
+  color: var(--text-color-primary-dark);
+  font-size: var(--font-size-regular);
+  line-height: var(--line-height-regular);
+}
+
+.text--white {
+  color: var(--text-color-primary-white);
+  font-size: var(--font-size-regular);
+  line-height: var(--line-height-regular);
+}
+
+img {
+  display: block;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+
+/* slick */
+
+
+.slick-initialized .slick-slide {
+  margin: 0 15px;
+}
+
+.slider__item--image img {
+  width: 100%;
+}
+
+.slick-slider button {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  box-shadow: 0px 7.03125px 19.5312px rgb(0 0 0 / 6%);
+}
+
+.slick-arrow {
+  position: absolute;
+  font-size: 2.5rem;
+  color: #000;
+  background: none;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.slick-prev {
+  top: calc(50%);
+  left: 0;
+}
+
+.slick-next {
+  right: 0px;
+  top: calc(50%);
+}
