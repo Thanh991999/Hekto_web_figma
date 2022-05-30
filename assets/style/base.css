@@ -18,8 +18,8 @@
   --font-size-bold: 4.2rem;
   --line-height-bold: 1.167rem;
   
-  --front-primary: 'Josefin Sans';
-  --front-secondary: 'Lato';
+  --font-primary: 'Josefin Sans';
+  --font-secondary: 'Lato';
 
 
 }
@@ -37,7 +37,7 @@ html {
   */
   font-weight: 400;
   box-sizing: border-box;
-  font-family: var(--front-primary), sans-serif;
+  font-family: var(--font-primary), sans-serif;
 }
 
 i {
@@ -84,6 +84,9 @@ p {
   justify-items: center;
 }
 
+.fw {
+  flex-wrap: wrap;
+}
 
 .df--sb {
   display: flex;
@@ -91,7 +94,7 @@ p {
   align-items: center;
 }
 
-.df--center{
+.jcc{
   justify-content: center;
 }
 
@@ -120,6 +123,23 @@ input {
   outline: none;
 }
 
+.btn {
+  font-size: 1.7rem;
+  line-height: 1.17em;
+  color: #fff;
+  border: none;
+}
+
+.btn--primary {
+  background-color: var(--color-pink)
+}
+
+.subheading {
+  margin-bottom: 13px;
+}
+
+
+
 
 /* slick */
 
@@ -132,7 +152,7 @@ input {
   width: 100%;
 }
 
-.slick-slider button {
+.slick-slider button.slick-arrow {
   background-color: #fff;
   border-radius: 50%;
   width: 50px;
@@ -142,6 +162,7 @@ input {
   justify-content: center;
   z-index: 1;
   box-shadow: 0px 7.03125px 19.5312px rgb(0 0 0 / 6%);
+  display: none !important;
 }
 
 .slick-arrow {
@@ -162,4 +183,30 @@ input {
 .slick-next {
   right: 0px;
   top: calc(50%);
+}
+
+.hero .slick-dots {
+  position: absolute;
+  bottom: 53px;
+  left: calc(50% - 25px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slick-dots button {
+  border-radius: initial;
+  transform: rotate(-45deg);
+  color: transparent;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #FB2E86;
+}
+
+.slick-dots li {
+  padding: 0 6px;
+}
+
+.slick-dots li.slick-active button {
+  background: #FB2E86;
 }
