@@ -39,8 +39,8 @@ $(document).ready(function(){
   });
 
   $('.featured-products .slider__wrapper').slick({
-    slidesToShow: 2,
-    slidesToScroll: 2,
+    slidesToShow: 4,
+    slidesToScroll: 1,
     speed: 1500,
     autoplay: false,
     autoplaySpeed: 3000,

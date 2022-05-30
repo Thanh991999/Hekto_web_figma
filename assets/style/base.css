@@ -1,6 +1,7 @@
 :root {
   --text-color-primary-dark: #0D0E43;
   --text-color-primary-white: #F1F1F1;
+  --text-heading: #1A0B5B;
 
   --text-color-secondary: #8A8FB9;
   /* --text-color-third: #8A8FB9; */
@@ -16,7 +17,7 @@
   --line-height-regular: 1.25em;
 
   --font-size-bold: 4.2rem;
-  --line-height-bold: 1.167rem;
+  --line-height-bold: 1.167em;
   
   --font-primary: 'Josefin Sans';
   --font-secondary: 'Lato';
@@ -38,6 +39,7 @@ html {
   font-weight: 400;
   box-sizing: border-box;
   font-family: var(--font-primary), sans-serif;
+  scroll-behavior: smooth;
 }
 
 i {
@@ -61,7 +63,7 @@ p {
   margin: 0;
 }
 
-.dfc {
+.dfs {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -88,9 +90,9 @@ p {
   flex-wrap: wrap;
 }
 
-.df--sb {
+.dfc   {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -138,12 +140,23 @@ input {
   margin-bottom: 13px;
 }
 
+.heading {
+  font-size: var(--font-size-bold);
+  line-height: var(--line-height-bold);
+  color: var(--text-heading);
+  text-align: center;
+  font-weight: 800;
+}
+
+.hidden {
+  display: none;
+}
 
 
 
 /* slick */
 
-
+/* custom trong moi product */
 .slick-initialized .slick-slide {
   margin: 0 15px;
 }
@@ -194,7 +207,7 @@ input {
   justify-content: center;
 }
 
-.slick-dots button {
+.hero .slick-dots button {
   border-radius: initial;
   transform: rotate(-45deg);
   color: transparent;
@@ -203,10 +216,97 @@ input {
   border: 1px solid #FB2E86;
 }
 
-.slick-dots li {
+.hero .slick-dots li {
   padding: 0 6px;
 }
 
-.slick-dots li.slick-active button {
+.hero .slick-dots li.slick-active button {
   background: #FB2E86;
 }
+
+/* dot feature product */
+
+.featured-products .slick-dots {
+  position: absolute;
+  bottom: 0px;
+  left: calc(50% - 25px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.featured-products .slick-dots button {
+  color: transparent;
+    width: 16px;
+    height: 4px;
+    background: #FEBAD7;
+    border-radius: 10px;
+    display: block;
+    border: none;
+}
+
+.featured-products .slick-dots li {
+  padding: 0 6px;
+}
+
+.featured-products .slick-dots li.slick-active button {
+  background: #FB2E86;
+  width: 24px;
+
+}
+
+.featured-products .slider__item--image img {
+  max-height: 236px;
+  object-fit: none;
+}
+
+/* end dot feature product */
+
+/* waves */
+
+.waves {
+  position:relative;
+  width: 100%;
+  height: 15vh;
+  min-height:100px;
+  max-height:150px;
+  background-color: #f2f0ff;
+}
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5) infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height:40px;
+    min-height:40px;
+  }
+  
+}
+
