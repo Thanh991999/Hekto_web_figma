@@ -499,8 +499,72 @@
     margin-bottom: 120px;
   }
 
-  
-
-
 /* end leatest products  */
 
+/* section goodwill(ưu đãi) */
+
+  .section.support {
+    padding-bottom: 135px;
+  }
+
+  .support__heading {
+    margin-bottom: 55px;
+  }
+
+  .support__wrapper {
+    padding: 45px 26px 67px;
+    text-align: center;
+    box-shadow: 0px 8px 40px rgba(49, 32, 138, 0.05);
+  }
+
+  .support__icon {
+    display: block;
+    margin: auto;
+    margin-bottom: 38px;
+  }
+
+  .support__title {
+    --font-size-regular: 2.2rem;
+    --line-height-regular: 1.13em;
+    margin-bottom: 20px;
+  }
+
+  .support__description {
+    --line-height-regular: 1.625em;
+    color: rgba(26, 11, 91, 0.3);
+    font-weight: 700;
+    font-family: var(--font-secondary);
+  }
+
+
+/* end  section goodwill(ưu đãi) */
+
+/* trending products */
+  .section.trending-product {
+
+  }
+
+  .trending-product__image {
+
+  }
+
+  .trending-product__wrapper {
+
+  }
+
+  .trending-product__heading {
+    --font-size-regular: 3.5rem;
+    --line-height-regular: 1.32em;
+    letter-spacing: 0.015em;
+    margin-bottom: 29px;
+  }
+
+  .trending-product__description {
+
+  }
+
+  .trending-product__btn {
+
+  }
+
+/* trending products */
